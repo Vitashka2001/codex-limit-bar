@@ -5,6 +5,7 @@ import OSLog
 @MainActor
 final class StatusBarController: NSObject, NSMenuDelegate {
     private static let monitoringDefaultsKey = "monitoringEnabled"
+    private static let minimumContentWidth: CGFloat = 388
 
     private let statusItem = NSStatusBar.system.statusItem(withLength: 66)
     private let client = CodexAppServerClient()
@@ -500,9 +501,19 @@ final class StatusBarController: NSObject, NSMenuDelegate {
     }
 
     func menuWillOpen(_ menu: NSMenu) {
+        menu.update()
+        resizeCustomViews(to: max(Self.minimumContentWidth, menu.size.width))
         refreshLaunchAtLoginState()
         if monitoringEnabled {
             client.refresh()
+        }
+    }
+
+    private func resizeCustomViews(to width: CGFloat) {
+        for view in [gaugeView, fiveHourView, weeklyView, accountView] {
+            guard view.frame.width != width else { continue }
+            view.setFrameSize(NSSize(width: width, height: view.frame.height))
+            view.needsDisplay = true
         }
     }
 

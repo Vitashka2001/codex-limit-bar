@@ -42,7 +42,7 @@ Codex Limit Bar communicates with the local `codex app-server`. It does not need
 
 ## Installation
 
-1. Download `Codex-Limit-Bar-1.1.0.dmg` from the [latest release](https://github.com/Vitashka2001/codex-limit-bar/releases/latest).
+1. Download `Codex-Limit-Bar-1.1.1.dmg` from the [latest release](https://github.com/Vitashka2001/codex-limit-bar/releases/latest).
 2. Open the image and drag **Codex Limit Bar** into `Applications`.
 3. Launch the app. Its indicator appears on the right side of the menu bar.
 

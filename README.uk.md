@@ -42,7 +42,7 @@ Codex Limit Bar використовує локальний `codex app-server`. 
 
 ## Установлення
 
-1. Завантажте `Codex-Limit-Bar-1.1.0.dmg` зі сторінки [останнього релізу](https://github.com/Vitashka2001/codex-limit-bar/releases/latest).
+1. Завантажте `Codex-Limit-Bar-1.1.1.dmg` зі сторінки [останнього релізу](https://github.com/Vitashka2001/codex-limit-bar/releases/latest).
 2. Відкрийте образ і перетягніть **Codex Limit Bar** до `Applications`.
 3. Запустіть застосунок. Його індикатор з’явиться праворуч у рядку меню.
 

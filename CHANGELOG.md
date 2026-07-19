@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - 2026-07-19
+
+- Made the limit gauge and information rows follow the full menu width on every language.
+
 ## 1.1.0 - 2026-07-19
 
 - Added English, Ukrainian, and Russian interface languages.
