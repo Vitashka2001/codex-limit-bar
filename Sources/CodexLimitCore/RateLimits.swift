@@ -1,5 +1,22 @@
 import Foundation
 
+public enum RateLimitIndicatorLevel: Equatable, Sendable {
+    case green
+    case yellow
+    case red
+
+    public init(remainingPercent: Double) {
+        switch remainingPercent {
+        case 50...:
+            self = .green
+        case 20..<50:
+            self = .yellow
+        default:
+            self = .red
+        }
+    }
+}
+
 public struct RateLimitWindow: Equatable, Sendable {
     public let usedPercent: Double
     public let windowDurationMinutes: Int
@@ -14,7 +31,6 @@ public struct RateLimitWindow: Equatable, Sendable {
     public var remainingPercent: Double {
         min(100, max(0, 100 - usedPercent))
     }
-
 }
 
 public struct RateLimitSnapshot: Equatable, Sendable {

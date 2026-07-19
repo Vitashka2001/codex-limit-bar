@@ -54,6 +54,9 @@ fi
 
 cp "$PLIST" "$CONTENTS/Info.plist"
 cp "$ROOT/Resources/AppIcon.icns" "$CONTENTS/Resources/AppIcon.icns"
+for LANGUAGE_DIR in "$ROOT"/Resources/*.lproj; do
+    cp -R "$LANGUAGE_DIR" "$CONTENTS/Resources/"
+done
 
 SIGN_IDENTITY=${CODE_SIGN_IDENTITY:--}
 if [ "$SIGN_IDENTITY" = "-" ]; then

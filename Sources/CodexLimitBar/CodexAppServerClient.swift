@@ -61,7 +61,7 @@ final class CodexAppServerClient: @unchecked Sendable {
         ioQueue.async { [weak self] in
             guard let self else { return }
             guard self.initialized, self.process?.isRunning == true else {
-                self.emitLoginFinished(success: false, error: "Codex app-server is not connected")
+                self.emitLoginFinished(success: false, error: L10n.string("error.appServerNotConnected"))
                 return
             }
             guard self.activeLoginID == nil else { return }
@@ -89,7 +89,7 @@ final class CodexAppServerClient: @unchecked Sendable {
         emitState(.connecting)
 
         guard let codexPath = CodexBinaryLocator.find() else {
-            emitState(.failed("Codex executable not found"))
+            emitState(.failed(L10n.string("error.executableNotFound")))
             return
         }
 
@@ -118,7 +118,7 @@ final class CodexAppServerClient: @unchecked Sendable {
             guard let client = self else { return }
             client.ioQueue.async { [weak client] in
                 client?.tearDown()
-                client?.emitState(.failed("Codex app-server stopped"))
+                client?.emitState(.failed(L10n.string("error.appServerStopped")))
             }
         }
 
@@ -137,13 +137,13 @@ final class CodexAppServerClient: @unchecked Sendable {
                         "title": "Codex Limit Bar",
                         "version": Bundle.main.object(
                             forInfoDictionaryKey: "CFBundleShortVersionString"
-                        ) as? String ?? "1.0.0",
+                        ) as? String ?? "1.1.0",
                     ],
                 ],
             ])
         } catch {
             tearDown()
-            emitState(.failed("Could not start Codex app-server"))
+            emitState(.failed(L10n.string("error.couldNotStart")))
         }
     }
 
@@ -243,7 +243,7 @@ final class CodexAppServerClient: @unchecked Sendable {
               let loginID = result["loginId"] as? String,
               let authURLString = result["authUrl"] as? String,
               let authURL = URL(string: authURLString) else {
-            emitLoginFinished(success: false, error: "Codex returned an invalid login response")
+            emitLoginFinished(success: false, error: L10n.string("error.invalidLoginResponse"))
             return
         }
 
@@ -254,7 +254,7 @@ final class CodexAppServerClient: @unchecked Sendable {
     }
 
     private func handleRequestError(_ error: [String: Any], kind: RequestKind) {
-        let message = error["message"] as? String ?? "Unknown Codex error"
+        let message = error["message"] as? String ?? L10n.string("error.unknownCodex")
         if kind == .login {
             activeLoginID = nil
             emitLoginFinished(success: false, error: message)

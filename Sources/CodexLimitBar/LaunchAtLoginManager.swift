@@ -65,6 +65,6 @@ private enum LaunchAtLoginError: LocalizedError {
     case executableNotFound
 
     var errorDescription: String? {
-        "Не удалось определить исполняемый файл приложения."
+        L10n.string("error.appExecutableNotFound")
     }
 }

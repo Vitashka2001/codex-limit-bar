@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate localizations
+        run: ./scripts/validate-localizations.sh
+
       - name: Run tests
         run: swift test --disable-sandbox
 

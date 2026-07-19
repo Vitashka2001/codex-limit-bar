@@ -1,0 +1,67 @@
+"menu.monitoring" = "Мониторинг лимитов";
+"menu.switchAccount" = "Сменить аккаунт Codex...";
+"menu.cancelSwitch" = "Отменить смену аккаунта";
+"menu.startingLogin" = "Запуск входа...";
+"menu.launchAtLogin" = "Запускать при входе";
+"menu.refresh" = "Обновить";
+"menu.language" = "Язык";
+"menu.quit" = "Полностью выключить";
+
+"window.fiveHours" = "5 часов";
+"window.week" = "Неделя";
+"window.limit" = "Лимит";
+"window.short.five" = "5ч";
+"window.short.week" = "7д";
+"window.remainingTitle" = "%@ · осталось %d%%";
+"window.resetUnavailable" = "Время сброса недоступно";
+"window.resetAt" = "Сброс %@";
+"detail.noData" = "%@: нет данных";
+"detail.remaining" = "%@: осталось %d%%";
+"detail.remainingReset" = "%@: осталось %d%% · сброс %@";
+"detail.monitoringStopped" = "%@: мониторинг остановлен";
+
+"limits.noData" = "Нет данных о лимитах";
+"limits.noWindow" = "Codex не вернул доступное окно";
+"limits.tooltip" = "Лимиты Codex: %@";
+"status.connecting.tooltip" = "Лимиты Codex: подключение";
+"status.monitoringStopped.tooltip" = "Мониторинг лимитов Codex остановлен";
+"status.off" = "выкл";
+
+"gauge.connecting.title" = "Подключение к Codex";
+"gauge.connecting.subtitle" = "Запрашиваем данные аккаунта";
+"gauge.unavailable.title" = "Codex недоступен";
+"gauge.monitoringStopped.title" = "Мониторинг остановлен";
+"gauge.monitoringStopped.subtitle" = "Фоновый опрос выключен";
+
+"account.connecting" = "Аккаунт: подключение";
+"account.connected" = "Аккаунт: подключен";
+"account.unavailable" = "Аккаунт: Codex недоступен";
+"account.signedOut" = "Аккаунт: вход не выполнен";
+"account.monitoringStopped" = "Аккаунт: мониторинг остановлен";
+"account.plan" = "Аккаунт: %@";
+"account.named" = "Аккаунт: %@";
+"account.namedPlan" = "Аккаунт: %@ · %@";
+"account.apiKey" = "Аккаунт: API key";
+"account.amazonBedrock" = "Аккаунт: Amazon Bedrock";
+"account.unknown" = "Аккаунт: неизвестный тип";
+
+"alert.browser.title" = "Не удалось открыть браузер";
+"alert.browser.message" = "Откройте смену аккаунта ещё раз после проверки браузера по умолчанию.";
+"alert.accountSwitched.title" = "Аккаунт Codex переключён";
+"alert.accountSwitched.message" = "Новые лимиты уже запрашиваются. Изменение действует также в Codex и расширениях редактора.";
+"alert.loginIncomplete.title" = "Вход не завершён";
+"alert.switchAccount.title" = "Сменить аккаунт Codex?";
+"alert.switchAccount.message" = "После успешного входа изменится активный аккаунт Codex на этом Mac, включая Codex, CLI и расширения редакторов. Трекер не хранит пароли или токены.";
+"alert.switchAccount.continue" = "Продолжить в браузере";
+"alert.cancel" = "Отмена";
+"alert.launchAtLogin.title" = "Не удалось изменить автозапуск";
+"alert.restart.title" = "Не удалось перезапустить приложение";
+"alert.ok" = "OK";
+
+"error.executableNotFound" = "Исполняемый файл Codex не найден";
+"error.appServerNotConnected" = "Codex app-server не подключён";
+"error.appServerStopped" = "Codex app-server остановлен";
+"error.couldNotStart" = "Не удалось запустить Codex app-server";
+"error.invalidLoginResponse" = "Codex вернул некорректный ответ входа";
+"error.unknownCodex" = "Неизвестная ошибка Codex";
+"error.appExecutableNotFound" = "Не удалось определить исполняемый файл приложения.";

@@ -1,0 +1,67 @@
+"menu.monitoring" = "Limit monitoring";
+"menu.switchAccount" = "Switch Codex account...";
+"menu.cancelSwitch" = "Cancel account switch";
+"menu.startingLogin" = "Starting sign-in...";
+"menu.launchAtLogin" = "Launch at login";
+"menu.refresh" = "Refresh";
+"menu.language" = "Language";
+"menu.quit" = "Quit completely";
+
+"window.fiveHours" = "5 hours";
+"window.week" = "Week";
+"window.limit" = "Limit";
+"window.short.five" = "5h";
+"window.short.week" = "7d";
+"window.remainingTitle" = "%@ · %d%% remaining";
+"window.resetUnavailable" = "Reset time unavailable";
+"window.resetAt" = "Resets %@";
+"detail.noData" = "%@: no data";
+"detail.remaining" = "%@: %d%% remaining";
+"detail.remainingReset" = "%@: %d%% remaining · resets %@";
+"detail.monitoringStopped" = "%@: monitoring stopped";
+
+"limits.noData" = "No limit data";
+"limits.noWindow" = "Codex did not return an available window";
+"limits.tooltip" = "Codex limits: %@";
+"status.connecting.tooltip" = "Codex limits: connecting";
+"status.monitoringStopped.tooltip" = "Codex limit monitoring stopped";
+"status.off" = "off";
+
+"gauge.connecting.title" = "Connecting to Codex";
+"gauge.connecting.subtitle" = "Requesting account data";
+"gauge.unavailable.title" = "Codex unavailable";
+"gauge.monitoringStopped.title" = "Monitoring stopped";
+"gauge.monitoringStopped.subtitle" = "Background polling is off";
+
+"account.connecting" = "Account: connecting";
+"account.connected" = "Account: connected";
+"account.unavailable" = "Account: Codex unavailable";
+"account.signedOut" = "Account: signed out";
+"account.monitoringStopped" = "Account: monitoring stopped";
+"account.plan" = "Account: %@";
+"account.named" = "Account: %@";
+"account.namedPlan" = "Account: %@ · %@";
+"account.apiKey" = "Account: API key";
+"account.amazonBedrock" = "Account: Amazon Bedrock";
+"account.unknown" = "Account: unknown type";
+
+"alert.browser.title" = "Could not open the browser";
+"alert.browser.message" = "Try switching accounts again after checking your default browser.";
+"alert.accountSwitched.title" = "Codex account switched";
+"alert.accountSwitched.message" = "New limits are already being requested. The change also applies to Codex and editor extensions.";
+"alert.loginIncomplete.title" = "Sign-in not completed";
+"alert.switchAccount.title" = "Switch Codex account?";
+"alert.switchAccount.message" = "After sign-in, the active Codex account on this Mac will change for Codex, CLI, and editor extensions. The tracker does not store passwords or tokens.";
+"alert.switchAccount.continue" = "Continue in browser";
+"alert.cancel" = "Cancel";
+"alert.launchAtLogin.title" = "Could not change launch at login";
+"alert.restart.title" = "Could not restart the app";
+"alert.ok" = "OK";
+
+"error.executableNotFound" = "Codex executable not found";
+"error.appServerNotConnected" = "Codex app-server is not connected";
+"error.appServerStopped" = "Codex app-server stopped";
+"error.couldNotStart" = "Could not start Codex app-server";
+"error.invalidLoginResponse" = "Codex returned an invalid login response";
+"error.unknownCodex" = "Unknown Codex error";
+"error.appExecutableNotFound" = "Could not determine the application executable.";

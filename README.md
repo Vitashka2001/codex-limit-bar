@@ -5,7 +5,11 @@
 <h1 align="center">Codex Limit Bar</h1>
 
 <p align="center">
-  Нативный индикатор лимитов Codex для строки меню macOS.
+  A native Codex limit tracker for the macOS menu bar.
+</p>
+
+<p align="center">
+  <strong>English</strong> · <a href="README.uk.md">Українська</a> · <a href="README.ru.md">Русский</a>
 </p>
 
 <p align="center">
@@ -15,68 +19,71 @@
   <a href="https://github.com/Vitashka2001/codex-limit-bar/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/Vitashka2001/codex-limit-bar"></a>
 </p>
 
-Codex Limit Bar показывает остаток доступного лимита прямо в строке меню. Приложение автоматически выбирает самое короткое доступное окно, а в раскрывающемся меню показывает подробности по 5-часовому и недельному лимитам.
+Codex Limit Bar displays your remaining Codex allowance directly in the menu bar. It automatically selects the shortest available window and shows detailed 5-hour and weekly limits in its menu.
 
-## Возможности
+## Features
 
-- процент и цветная шкала в строке меню;
-- подробные 5-часовой и недельный лимиты со временем сброса;
-- отображение активного аккаунта и тарифного плана;
-- переключение аккаунта Codex через официальный вход в браузере;
-- ручное обновление и возможность приостановить мониторинг;
-- запуск вместе с macOS;
-- светлая и тёмная темы без дополнительных настроек.
+- remaining percentage and a color gauge in the menu bar;
+- green at 50–100%, yellow at 20–49%, and red below 20%;
+- detailed 5-hour and weekly limits with reset times;
+- active account and plan display;
+- Codex account switching through the official browser sign-in;
+- English, Ukrainian, and Russian interface languages;
+- manual refresh, monitoring pause, and launch at login;
+- native light and dark appearance.
 
-## Требования
+## Requirements
 
-- macOS 13 Ventura или новее;
-- установленный [Codex](https://openai.com/codex/) или официальное расширение Codex для VS Code/Cursor;
-- выполненный вход в Codex.
+- macOS 13 Ventura or newer;
+- [Codex](https://openai.com/codex/) or the official Codex extension for VS Code/Cursor;
+- an active Codex sign-in.
 
-Codex Limit Bar использует локальный `codex app-server`. Отдельный API-ключ приложению не нужен.
+Codex Limit Bar communicates with the local `codex app-server`. It does not need a separate API key.
 
-## Установка
+## Installation
 
-1. Скачайте `Codex-Limit-Bar-1.0.0.dmg` на странице [последнего релиза](https://github.com/Vitashka2001/codex-limit-bar/releases/latest).
-2. Откройте образ и перетащите **Codex Limit Bar** в `Applications`.
-3. Запустите приложение. Его индикатор появится в правой части строки меню.
+1. Download `Codex-Limit-Bar-1.1.0.dmg` from the [latest release](https://github.com/Vitashka2001/codex-limit-bar/releases/latest).
+2. Open the image and drag **Codex Limit Bar** into `Applications`.
+3. Launch the app. Its indicator appears on the right side of the menu bar.
 
-Первая публичная сборка подписана локальной подписью, но не нотарифицирована Apple. Если macOS заблокирует первый запуск, нажмите приложение правой кнопкой, выберите **Открыть** и подтвердите запуск. Это требуется только один раз.
+The public build is locally signed but not notarized by Apple. If macOS blocks the first launch, right-click the app, choose **Open**, and confirm. This is only required once.
 
-## Управление
+## Language
 
-- **Мониторинг лимитов** временно останавливает фоновое обновление.
-- **Сменить аккаунт Codex...** открывает официальный вход и меняет активный аккаунт Codex на этом Mac.
-- **Запускать при входе** включает или отключает автозапуск.
-- **Полностью выключить** завершает приложение.
+Open the menu, select **Language**, and choose **English**, **Українська**, or **Русский**. The app restarts automatically and remembers the selection. Before a language is selected manually, the app follows the preferred macOS language.
 
-Чтобы полностью отключить утилиту, сначала снимите галочку **Запускать при входе**, затем выберите **Полностью выключить**. Для повторного включения просто откройте приложение из `Applications`.
+## Controls
 
-## Приватность
+- **Limit monitoring** temporarily stops background updates.
+- **Switch Codex account...** opens the official sign-in and changes the active Codex account on this Mac.
+- **Launch at login** enables or disables automatic launch.
+- **Quit completely** closes the app.
 
-Приложение не читает и не сохраняет пароли, токены и API-ключи. Оно запускает установленный локально Codex и получает от него только сведения об аккаунте и лимитах. Подробности описаны в [PRIVACY.md](PRIVACY.md).
+To disable the utility completely, turn off **Launch at login** before choosing **Quit completely**. Open the app from `Applications` to enable it again.
 
-## Сборка из исходников
+## Privacy
 
-Понадобятся Xcode Command Line Tools и Swift 6:
+The app does not read or store passwords, tokens, or API keys. It launches the locally installed Codex executable and receives only account and limit information. See [PRIVACY.md](PRIVACY.md) for details.
+
+## Build from source
+
+Xcode Command Line Tools and Swift 6 are required:
 
 ```sh
 swift test
 ./scripts/build-app.sh
 ```
 
-Готовое приложение появится в `dist/Codex Limit Bar.app`.
+The app is written to `dist/Codex Limit Bar.app`.
 
-Для создания Universal-сборки, DMG и ZIP:
+Create a Universal DMG and ZIP for Apple Silicon and Intel with:
 
 ```sh
 ./scripts/package-release.sh
 ```
 
-Архивы поддерживают Apple Silicon и Intel Mac.
+## Project status
 
-## Статус проекта
+This is an independent open-source utility and is not an official OpenAI product. The local Codex protocol may change between versions, so compatibility reports and pull requests are welcome.
 
-Это независимая open-source утилита и не официальный продукт OpenAI. Локальный протокол Codex может меняться между версиями, поэтому сообщения о несовместимости и pull request приветствуются.
-
-Проект распространяется по лицензии [MIT](LICENSE).
+Released under the [MIT License](LICENSE).

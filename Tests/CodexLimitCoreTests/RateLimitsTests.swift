@@ -31,6 +31,15 @@ import Testing
     #expect(RateLimitWindow(usedPercent: 120, windowDurationMinutes: 300, resetsAt: nil).remainingPercent == 0)
 }
 
+@Test func selectsIndicatorColorsAtExactThresholds() {
+    #expect(RateLimitIndicatorLevel(remainingPercent: 100) == .green)
+    #expect(RateLimitIndicatorLevel(remainingPercent: 50) == .green)
+    #expect(RateLimitIndicatorLevel(remainingPercent: 49.99) == .yellow)
+    #expect(RateLimitIndicatorLevel(remainingPercent: 20) == .yellow)
+    #expect(RateLimitIndicatorLevel(remainingPercent: 19.99) == .red)
+    #expect(RateLimitIndicatorLevel(remainingPercent: 0) == .red)
+}
+
 @Test func parsesChatGPTAccountWithoutCredentials() throws {
     let json = #"""
     {"id":8,"result":{"account":{"type":"chatgpt","email":"user@example.com","planType":"plus"},"requiresOpenaiAuth":true}}

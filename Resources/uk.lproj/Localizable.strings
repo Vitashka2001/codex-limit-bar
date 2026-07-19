@@ -1,0 +1,67 @@
+"menu.monitoring" = "Моніторинг лімітів";
+"menu.switchAccount" = "Змінити обліковий запис Codex...";
+"menu.cancelSwitch" = "Скасувати зміну облікового запису";
+"menu.startingLogin" = "Запуск входу...";
+"menu.launchAtLogin" = "Запускати під час входу";
+"menu.refresh" = "Оновити";
+"menu.language" = "Мова";
+"menu.quit" = "Повністю вимкнути";
+
+"window.fiveHours" = "5 годин";
+"window.week" = "Тиждень";
+"window.limit" = "Ліміт";
+"window.short.five" = "5г";
+"window.short.week" = "7д";
+"window.remainingTitle" = "%@ · залишилося %d%%";
+"window.resetUnavailable" = "Час скидання недоступний";
+"window.resetAt" = "Скидання %@";
+"detail.noData" = "%@: немає даних";
+"detail.remaining" = "%@: залишилося %d%%";
+"detail.remainingReset" = "%@: залишилося %d%% · скидання %@";
+"detail.monitoringStopped" = "%@: моніторинг зупинено";
+
+"limits.noData" = "Немає даних про ліміти";
+"limits.noWindow" = "Codex не повернув доступне вікно";
+"limits.tooltip" = "Ліміти Codex: %@";
+"status.connecting.tooltip" = "Ліміти Codex: підключення";
+"status.monitoringStopped.tooltip" = "Моніторинг лімітів Codex зупинено";
+"status.off" = "вимк";
+
+"gauge.connecting.title" = "Підключення до Codex";
+"gauge.connecting.subtitle" = "Запитуємо дані облікового запису";
+"gauge.unavailable.title" = "Codex недоступний";
+"gauge.monitoringStopped.title" = "Моніторинг зупинено";
+"gauge.monitoringStopped.subtitle" = "Фонове опитування вимкнено";
+
+"account.connecting" = "Обліковий запис: підключення";
+"account.connected" = "Обліковий запис: підключено";
+"account.unavailable" = "Обліковий запис: Codex недоступний";
+"account.signedOut" = "Обліковий запис: вхід не виконано";
+"account.monitoringStopped" = "Обліковий запис: моніторинг зупинено";
+"account.plan" = "Обліковий запис: %@";
+"account.named" = "Обліковий запис: %@";
+"account.namedPlan" = "Обліковий запис: %@ · %@";
+"account.apiKey" = "Обліковий запис: API key";
+"account.amazonBedrock" = "Обліковий запис: Amazon Bedrock";
+"account.unknown" = "Обліковий запис: невідомий тип";
+
+"alert.browser.title" = "Не вдалося відкрити браузер";
+"alert.browser.message" = "Спробуйте змінити обліковий запис ще раз після перевірки типового браузера.";
+"alert.accountSwitched.title" = "Обліковий запис Codex змінено";
+"alert.accountSwitched.message" = "Нові ліміти вже запитуються. Зміна також діє в Codex і розширеннях редактора.";
+"alert.loginIncomplete.title" = "Вхід не завершено";
+"alert.switchAccount.title" = "Змінити обліковий запис Codex?";
+"alert.switchAccount.message" = "Після успішного входу активний обліковий запис Codex на цьому Mac зміниться для Codex, CLI та розширень редакторів. Трекер не зберігає паролі або токени.";
+"alert.switchAccount.continue" = "Продовжити в браузері";
+"alert.cancel" = "Скасувати";
+"alert.launchAtLogin.title" = "Не вдалося змінити автозапуск";
+"alert.restart.title" = "Не вдалося перезапустити застосунок";
+"alert.ok" = "OK";
+
+"error.executableNotFound" = "Виконуваний файл Codex не знайдено";
+"error.appServerNotConnected" = "Codex app-server не підключено";
+"error.appServerStopped" = "Codex app-server зупинено";
+"error.couldNotStart" = "Не вдалося запустити Codex app-server";
+"error.invalidLoginResponse" = "Codex повернув некоректну відповідь входу";
+"error.unknownCodex" = "Невідома помилка Codex";
+"error.appExecutableNotFound" = "Не вдалося визначити виконуваний файл застосунку.";

@@ -1,15 +1,17 @@
-# Приватность
+# Privacy
 
-Codex Limit Bar работает локально на Mac пользователя.
+[English](PRIVACY.md) · [Українська](PRIVACY.uk.md) · [Русский](PRIVACY.ru.md)
 
-Приложение:
+Codex Limit Bar runs locally on the user's Mac.
 
-- не собирает аналитику и телеметрию;
-- не использует собственный сервер;
-- не читает и не сохраняет пароли, access token, refresh token или API-ключи;
-- не запрашивает доступ к клавиатуре, экрану, микрофону, камере или файлам пользователя;
-- получает сведения об аккаунте и лимитах только через установленный локально `codex app-server`.
+The app:
 
-При выборе смены аккаунта Codex открывает официальный процесс авторизации в браузере. Новый аккаунт становится активным для остальных локальных инструментов Codex на этом Mac.
+- does not collect analytics or telemetry;
+- does not use its own server;
+- does not read or store passwords, access tokens, refresh tokens, or API keys;
+- does not request access to keyboard input, screen recording, microphone, camera, or user files;
+- receives account and limit information only from the locally installed `codex app-server`.
 
-Пользователь может остановить опрос через пункт **Мониторинг лимитов** или полностью завершить приложение через пункт **Полностью выключить**.
+When the user switches accounts, Codex opens its official browser authentication flow. The new account becomes active for other local Codex tools on the same Mac.
+
+The user can stop polling through **Limit monitoring** or close the app through **Quit completely**.
